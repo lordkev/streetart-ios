@@ -18,6 +18,12 @@
 		EBF474C1158D044A00E6CB08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474A8158D044A00E6CB08 /* Foundation.framework */; };
 		EBF474C9158D044A00E6CB08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBF474C7158D044A00E6CB08 /* InfoPlist.strings */; };
 		EBF474CC158D044A00E6CB08 /* StreetArtTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF474CB158D044A00E6CB08 /* StreetArtTests.m */; };
+		EBF474D6158D04E000E6CB08 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474D5158D04E000E6CB08 /* Parse.framework */; };
+		EBF474E5158D077000E6CB08 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474E0158D077000E6CB08 /* CFNetwork.framework */; };
+		EBF474E6158D077000E6CB08 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474E1158D077000E6CB08 /* MobileCoreServices.framework */; };
+		EBF474E7158D077000E6CB08 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474E2158D077000E6CB08 /* QuartzCore.framework */; };
+		EBF474E8158D077000E6CB08 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474E3158D077000E6CB08 /* Security.framework */; };
+		EBF474E9158D077000E6CB08 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474E4158D077000E6CB08 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		EBF474C8158D044A00E6CB08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EBF474CA158D044A00E6CB08 /* StreetArtTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreetArtTests.h; sourceTree = "<group>"; };
 		EBF474CB158D044A00E6CB08 /* StreetArtTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreetArtTests.m; sourceTree = "<group>"; };
+		EBF474D5158D04E000E6CB08 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../libraries/Parse/Parse.framework; sourceTree = "<group>"; };
+		EBF474E0158D077000E6CB08 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EBF474E1158D077000E6CB08 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EBF474E2158D077000E6CB08 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EBF474E3158D077000E6CB08 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EBF474E4158D077000E6CB08 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF474E5158D077000E6CB08 /* CFNetwork.framework in Frameworks */,
+				EBF474E6158D077000E6CB08 /* MobileCoreServices.framework in Frameworks */,
+				EBF474E7158D077000E6CB08 /* QuartzCore.framework in Frameworks */,
+				EBF474E8158D077000E6CB08 /* Security.framework in Frameworks */,
+				EBF474E9158D077000E6CB08 /* SystemConfiguration.framework in Frameworks */,
+				EBF474D6158D04E000E6CB08 /* Parse.framework in Frameworks */,
 				EBF474A7158D044A00E6CB08 /* UIKit.framework in Frameworks */,
 				EBF474A9158D044A00E6CB08 /* Foundation.framework in Frameworks */,
 				EBF474AB158D044A00E6CB08 /* CoreGraphics.framework in Frameworks */,
@@ -95,6 +113,12 @@
 		EBF474A5158D044A00E6CB08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBF474E0158D077000E6CB08 /* CFNetwork.framework */,
+				EBF474E1158D077000E6CB08 /* MobileCoreServices.framework */,
+				EBF474E2158D077000E6CB08 /* QuartzCore.framework */,
+				EBF474E3158D077000E6CB08 /* Security.framework */,
+				EBF474E4158D077000E6CB08 /* SystemConfiguration.framework */,
+				EBF474D5158D04E000E6CB08 /* Parse.framework */,
 				EBF474A6158D044A00E6CB08 /* UIKit.framework */,
 				EBF474A8158D044A00E6CB08 /* Foundation.framework */,
 				EBF474AA158D044A00E6CB08 /* CoreGraphics.framework */,
@@ -106,8 +130,7 @@
 		EBF474AC158D044A00E6CB08 /* StreetArt */ = {
 			isa = PBXGroup;
 			children = (
-				EBF474B5158D044A00E6CB08 /* SAAppDelegate.h */,
-				EBF474B6158D044A00E6CB08 /* SAAppDelegate.m */,
+				EBF474D7158D050500E6CB08 /* Classes */,
 				EBF474AD158D044A00E6CB08 /* Supporting Files */,
 			);
 			path = StreetArt;
@@ -141,6 +164,47 @@
 				EBF474C7158D044A00E6CB08 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBF474D7158D050500E6CB08 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EBF474D8158D050D00E6CB08 /* Models */,
+				EBF474D9158D051300E6CB08 /* Views */,
+				EBF474DA158D051D00E6CB08 /* Controllers */,
+				EBF474DB158D052400E6CB08 /* Other Sources */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		EBF474D8158D050D00E6CB08 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EBF474D9158D051300E6CB08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EBF474DA158D051D00E6CB08 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		EBF474DB158D052400E6CB08 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EBF474B5158D044A00E6CB08 /* SAAppDelegate.h */,
+				EBF474B6158D044A00E6CB08 /* SAAppDelegate.m */,
+			);
+			name = "Other Sources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +407,10 @@
 		EBF474D0158D044A00E6CB08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../libraries/Parse\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StreetArt/StreetArt-Prefix.pch";
 				INFOPLIST_FILE = "StreetArt/StreetArt-Info.plist";
@@ -354,6 +422,10 @@
 		EBF474D1158D044A00E6CB08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../libraries/Parse\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StreetArt/StreetArt-Prefix.pch";
 				INFOPLIST_FILE = "StreetArt/StreetArt-Info.plist";

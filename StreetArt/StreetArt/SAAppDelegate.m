@@ -8,6 +8,8 @@
 
 #import "SAAppDelegate.h"
 
+#import "Parse/Parse.h"
+
 @implementation SAAppDelegate
 
 @synthesize window = _window;
@@ -17,6 +19,15 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+
+    [Parse setApplicationId:@"Hpm9pjGcEkpLBI6rR90qCOveB8IhURDsGMPlQ710"
+                  clientKey:@"mhlNetHwjqcu6Wc0moNBCyN4CTrHPAEQaR0U4vi4"];
+    //[PFFacebookUtils initializeWithApplicationId:@"your_facebook_app_id"];
+    
+    PFACL *defaultACL = [PFACL ACL];
+    [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
