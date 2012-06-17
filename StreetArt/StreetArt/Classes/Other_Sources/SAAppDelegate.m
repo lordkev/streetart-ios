@@ -10,6 +10,8 @@
 
 #import "Parse/Parse.h"
 
+#import "SAMapViewController.h"
+
 @implementation SAAppDelegate
 
 @synthesize window = _window;
@@ -17,18 +19,24 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-
     [Parse setApplicationId:@"Hpm9pjGcEkpLBI6rR90qCOveB8IhURDsGMPlQ710"
                   clientKey:@"mhlNetHwjqcu6Wc0moNBCyN4CTrHPAEQaR0U4vi4"];
-    //[PFFacebookUtils initializeWithApplicationId:@"your_facebook_app_id"];
+    [PFFacebookUtils initializeWithApplicationId:@"453481201342319"];
     
+    [PFUser enableAutomaticUser];
     PFACL *defaultACL = [PFACL ACL];
+    // Optionally enable public read access by default.
+    [defaultACL setPublicReadAccess:YES];
     [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
     
+    SAMapViewController *mapViewController = [[SAMapViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController *rootNavController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
+    self.window.rootViewController = rootNavController;
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -57,6 +65,12 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    return [PFFacebookUtils handleOpenURL:url];
 }
 
 @end

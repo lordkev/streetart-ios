@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB5C2132158E8DF700946754 /* SAMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5C2131158E8DF700946754 /* SAMapAnnotationView.m */; };
+		EB5C2139158E928300946754 /* SAMapAnnotationCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5C2138158E928300946754 /* SAMapAnnotationCalloutView.m */; };
 		EBF474A7158D044A00E6CB08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474A6158D044A00E6CB08 /* UIKit.framework */; };
 		EBF474A9158D044A00E6CB08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474A8158D044A00E6CB08 /* Foundation.framework */; };
 		EBF474AB158D044A00E6CB08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474AA158D044A00E6CB08 /* CoreGraphics.framework */; };
 		EBF474B1158D044A00E6CB08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBF474AF158D044A00E6CB08 /* InfoPlist.strings */; };
 		EBF474B3158D044A00E6CB08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF474B2158D044A00E6CB08 /* main.m */; };
-		EBF474B7158D044A00E6CB08 /* SAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF474B6158D044A00E6CB08 /* SAAppDelegate.m */; };
 		EBF474BF158D044A00E6CB08 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474BE158D044A00E6CB08 /* SenTestingKit.framework */; };
 		EBF474C0158D044A00E6CB08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474A6158D044A00E6CB08 /* UIKit.framework */; };
 		EBF474C1158D044A00E6CB08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474A8158D044A00E6CB08 /* Foundation.framework */; };
@@ -24,6 +25,22 @@
 		EBF474E7158D077000E6CB08 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474E2158D077000E6CB08 /* QuartzCore.framework */; };
 		EBF474E8158D077000E6CB08 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474E3158D077000E6CB08 /* Security.framework */; };
 		EBF474E9158D077000E6CB08 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474E4158D077000E6CB08 /* SystemConfiguration.framework */; };
+		EBF474EC158D126B00E6CB08 /* SAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF474EB158D126B00E6CB08 /* SAMapViewController.m */; };
+		EBF474EE158D162100E6CB08 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474ED158D162100E6CB08 /* MapKit.framework */; };
+		EBF474F0158D174C00E6CB08 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474EF158D174C00E6CB08 /* CoreLocation.framework */; };
+		EBF474F3158D18F400E6CB08 /* SALocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF474F2158D18F400E6CB08 /* SALocationManager.m */; };
+		EBF474F6158D190B00E6CB08 /* SAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF474F5158D190B00E6CB08 /* SAAppDelegate.m */; };
+		EBF474F9158D233500E6CB08 /* SAArtPiece.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF474F8158D233500E6CB08 /* SAArtPiece.m */; };
+		EBF474FB158D903000E6CB08 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF474FA158D903000E6CB08 /* AssetsLibrary.framework */; };
+		EBF4750A158DB35B00E6CB08 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = EBF47506158DB35B00E6CB08 /* Icon-72.png */; };
+		EBF4750B158DB35B00E6CB08 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBF47507158DB35B00E6CB08 /* Icon-72@2x.png */; };
+		EBF4750C158DB35B00E6CB08 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EBF47508158DB35B00E6CB08 /* Icon.png */; };
+		EBF4750D158DB35B00E6CB08 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBF47509158DB35B00E6CB08 /* Icon@2x.png */; };
+		EBF47510158DB62500E6CB08 /* SALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF4750F158DB62500E6CB08 /* SALoginViewController.m */; };
+		EBF47513158DB64200E6CB08 /* SASignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF47512158DB64200E6CB08 /* SASignupViewController.m */; };
+		EBF47516158DBF0400E6CB08 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF47515158DBF0400E6CB08 /* UIImage+Resize.m */; };
+		EBF4751C158DBF7500E6CB08 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF47519158DBF7500E6CB08 /* UIImage+Alpha.m */; };
+		EBF4751D158DBF7500E6CB08 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF4751B158DBF7500E6CB08 /* UIImage+RoundedCorner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EBF474A2158D044A00E6CB08 /* StreetArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB5C2130158E8DF700946754 /* SAMapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAMapAnnotationView.h; path = Classes/Views/SAMapAnnotationView.h; sourceTree = "<group>"; };
+		EB5C2131158E8DF700946754 /* SAMapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SAMapAnnotationView.m; path = Classes/Views/SAMapAnnotationView.m; sourceTree = "<group>"; };
+		EB5C2137158E928300946754 /* SAMapAnnotationCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAMapAnnotationCalloutView.h; path = Classes/Views/SAMapAnnotationCalloutView.h; sourceTree = "<group>"; };
+		EB5C2138158E928300946754 /* SAMapAnnotationCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SAMapAnnotationCalloutView.m; path = Classes/Views/SAMapAnnotationCalloutView.m; sourceTree = "<group>"; };
+		EBF474A2158D044A00E6CB08 /* Art Mapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art Mapper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF474A6158D044A00E6CB08 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EBF474A8158D044A00E6CB08 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EBF474AA158D044A00E6CB08 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,8 +66,6 @@
 		EBF474B0158D044A00E6CB08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EBF474B2158D044A00E6CB08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EBF474B4158D044A00E6CB08 /* StreetArt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StreetArt-Prefix.pch"; sourceTree = "<group>"; };
-		EBF474B5158D044A00E6CB08 /* SAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAAppDelegate.h; sourceTree = "<group>"; };
-		EBF474B6158D044A00E6CB08 /* SAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAAppDelegate.m; sourceTree = "<group>"; };
 		EBF474BD158D044A00E6CB08 /* StreetArtTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreetArtTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF474BE158D044A00E6CB08 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		EBF474C6158D044A00E6CB08 /* StreetArtTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StreetArtTests-Info.plist"; sourceTree = "<group>"; };
@@ -59,6 +78,31 @@
 		EBF474E2158D077000E6CB08 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EBF474E3158D077000E6CB08 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		EBF474E4158D077000E6CB08 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EBF474EA158D126B00E6CB08 /* SAMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAMapViewController.h; path = Classes/Controllers/SAMapViewController.h; sourceTree = "<group>"; };
+		EBF474EB158D126B00E6CB08 /* SAMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SAMapViewController.m; path = Classes/Controllers/SAMapViewController.m; sourceTree = "<group>"; };
+		EBF474ED158D162100E6CB08 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EBF474EF158D174C00E6CB08 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EBF474F1158D18F400E6CB08 /* SALocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SALocationManager.h; path = Classes/Other_Sources/SALocationManager.h; sourceTree = "<group>"; };
+		EBF474F2158D18F400E6CB08 /* SALocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SALocationManager.m; path = Classes/Other_Sources/SALocationManager.m; sourceTree = "<group>"; };
+		EBF474F4158D190B00E6CB08 /* SAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAAppDelegate.h; path = Classes/Other_Sources/SAAppDelegate.h; sourceTree = "<group>"; };
+		EBF474F5158D190B00E6CB08 /* SAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SAAppDelegate.m; path = Classes/Other_Sources/SAAppDelegate.m; sourceTree = "<group>"; };
+		EBF474F7158D233500E6CB08 /* SAArtPiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAArtPiece.h; path = Classes/Models/SAArtPiece.h; sourceTree = "<group>"; };
+		EBF474F8158D233500E6CB08 /* SAArtPiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SAArtPiece.m; path = Classes/Models/SAArtPiece.m; sourceTree = "<group>"; };
+		EBF474FA158D903000E6CB08 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		EBF47506158DB35B00E6CB08 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resources/Images/Icon-72.png"; sourceTree = "<group>"; };
+		EBF47507158DB35B00E6CB08 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "Resources/Images/Icon-72@2x.png"; sourceTree = "<group>"; };
+		EBF47508158DB35B00E6CB08 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Images/Icon.png; sourceTree = "<group>"; };
+		EBF47509158DB35B00E6CB08 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Images/Icon@2x.png"; sourceTree = "<group>"; };
+		EBF4750E158DB62500E6CB08 /* SALoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SALoginViewController.h; path = Classes/Controllers/SALoginViewController.h; sourceTree = "<group>"; };
+		EBF4750F158DB62500E6CB08 /* SALoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SALoginViewController.m; path = Classes/Controllers/SALoginViewController.m; sourceTree = "<group>"; };
+		EBF47511158DB64200E6CB08 /* SASignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SASignupViewController.h; path = Classes/Controllers/SASignupViewController.h; sourceTree = "<group>"; };
+		EBF47512158DB64200E6CB08 /* SASignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SASignupViewController.m; path = Classes/Controllers/SASignupViewController.m; sourceTree = "<group>"; };
+		EBF47514158DBF0300E6CB08 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Resize.h"; path = "Classes/Categories/UIImage+Resize.h"; sourceTree = "<group>"; };
+		EBF47515158DBF0400E6CB08 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Resize.m"; path = "Classes/Categories/UIImage+Resize.m"; sourceTree = "<group>"; };
+		EBF47518158DBF7500E6CB08 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Alpha.h"; path = "Classes/Categories/UIImage+Alpha.h"; sourceTree = "<group>"; };
+		EBF47519158DBF7500E6CB08 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Alpha.m"; path = "Classes/Categories/UIImage+Alpha.m"; sourceTree = "<group>"; };
+		EBF4751A158DBF7500E6CB08 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+RoundedCorner.h"; path = "Classes/Categories/UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		EBF4751B158DBF7500E6CB08 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RoundedCorner.m"; path = "Classes/Categories/UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +110,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF474FB158D903000E6CB08 /* AssetsLibrary.framework in Frameworks */,
+				EBF474F0158D174C00E6CB08 /* CoreLocation.framework in Frameworks */,
+				EBF474EE158D162100E6CB08 /* MapKit.framework in Frameworks */,
 				EBF474E5158D077000E6CB08 /* CFNetwork.framework in Frameworks */,
 				EBF474E6158D077000E6CB08 /* MobileCoreServices.framework in Frameworks */,
 				EBF474E7158D077000E6CB08 /* QuartzCore.framework in Frameworks */,
@@ -104,7 +151,7 @@
 		EBF474A3158D044A00E6CB08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EBF474A2158D044A00E6CB08 /* StreetArt.app */,
+				EBF474A2158D044A00E6CB08 /* Art Mapper.app */,
 				EBF474BD158D044A00E6CB08 /* StreetArtTests.octest */,
 			);
 			name = Products;
@@ -113,6 +160,9 @@
 		EBF474A5158D044A00E6CB08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBF474EF158D174C00E6CB08 /* CoreLocation.framework */,
+				EBF474FA158D903000E6CB08 /* AssetsLibrary.framework */,
+				EBF474ED158D162100E6CB08 /* MapKit.framework */,
 				EBF474E0158D077000E6CB08 /* CFNetwork.framework */,
 				EBF474E1158D077000E6CB08 /* MobileCoreServices.framework */,
 				EBF474E2158D077000E6CB08 /* QuartzCore.framework */,
@@ -131,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				EBF474D7158D050500E6CB08 /* Classes */,
+				EBF474FC158DB23700E6CB08 /* Resources */,
 				EBF474AD158D044A00E6CB08 /* Supporting Files */,
 			);
 			path = StreetArt;
@@ -169,6 +220,7 @@
 		EBF474D7158D050500E6CB08 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EBF47517158DBF0800E6CB08 /* Categories */,
 				EBF474D8158D050D00E6CB08 /* Models */,
 				EBF474D9158D051300E6CB08 /* Views */,
 				EBF474DA158D051D00E6CB08 /* Controllers */,
@@ -180,6 +232,8 @@
 		EBF474D8158D050D00E6CB08 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EBF474F7158D233500E6CB08 /* SAArtPiece.h */,
+				EBF474F8158D233500E6CB08 /* SAArtPiece.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -187,6 +241,10 @@
 		EBF474D9158D051300E6CB08 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EB5C2130158E8DF700946754 /* SAMapAnnotationView.h */,
+				EB5C2131158E8DF700946754 /* SAMapAnnotationView.m */,
+				EB5C2137158E928300946754 /* SAMapAnnotationCalloutView.h */,
+				EB5C2138158E928300946754 /* SAMapAnnotationCalloutView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -194,6 +252,12 @@
 		EBF474DA158D051D00E6CB08 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EBF474EA158D126B00E6CB08 /* SAMapViewController.h */,
+				EBF474EB158D126B00E6CB08 /* SAMapViewController.m */,
+				EBF4750E158DB62500E6CB08 /* SALoginViewController.h */,
+				EBF4750F158DB62500E6CB08 /* SALoginViewController.m */,
+				EBF47511158DB64200E6CB08 /* SASignupViewController.h */,
+				EBF47512158DB64200E6CB08 /* SASignupViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -201,10 +265,44 @@
 		EBF474DB158D052400E6CB08 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				EBF474B5158D044A00E6CB08 /* SAAppDelegate.h */,
-				EBF474B6158D044A00E6CB08 /* SAAppDelegate.m */,
+				EBF474F4158D190B00E6CB08 /* SAAppDelegate.h */,
+				EBF474F5158D190B00E6CB08 /* SAAppDelegate.m */,
+				EBF474F1158D18F400E6CB08 /* SALocationManager.h */,
+				EBF474F2158D18F400E6CB08 /* SALocationManager.m */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		EBF474FC158DB23700E6CB08 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EBF474FD158DB23F00E6CB08 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EBF474FD158DB23F00E6CB08 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EBF47506158DB35B00E6CB08 /* Icon-72.png */,
+				EBF47507158DB35B00E6CB08 /* Icon-72@2x.png */,
+				EBF47508158DB35B00E6CB08 /* Icon.png */,
+				EBF47509158DB35B00E6CB08 /* Icon@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		EBF47517158DBF0800E6CB08 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EBF47518158DBF7500E6CB08 /* UIImage+Alpha.h */,
+				EBF47519158DBF7500E6CB08 /* UIImage+Alpha.m */,
+				EBF4751A158DBF7500E6CB08 /* UIImage+RoundedCorner.h */,
+				EBF4751B158DBF7500E6CB08 /* UIImage+RoundedCorner.m */,
+				EBF47514158DBF0300E6CB08 /* UIImage+Resize.h */,
+				EBF47515158DBF0400E6CB08 /* UIImage+Resize.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +322,7 @@
 			);
 			name = StreetArt;
 			productName = StreetArt;
-			productReference = EBF474A2158D044A00E6CB08 /* StreetArt.app */;
+			productReference = EBF474A2158D044A00E6CB08 /* Art Mapper.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EBF474BC158D044A00E6CB08 /* StreetArtTests */ = {
@@ -280,6 +378,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF474B1158D044A00E6CB08 /* InfoPlist.strings in Resources */,
+				EBF4750A158DB35B00E6CB08 /* Icon-72.png in Resources */,
+				EBF4750B158DB35B00E6CB08 /* Icon-72@2x.png in Resources */,
+				EBF4750C158DB35B00E6CB08 /* Icon.png in Resources */,
+				EBF4750D158DB35B00E6CB08 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +417,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF474B3158D044A00E6CB08 /* main.m in Sources */,
-				EBF474B7158D044A00E6CB08 /* SAAppDelegate.m in Sources */,
+				EBF474EC158D126B00E6CB08 /* SAMapViewController.m in Sources */,
+				EBF474F3158D18F400E6CB08 /* SALocationManager.m in Sources */,
+				EBF474F6158D190B00E6CB08 /* SAAppDelegate.m in Sources */,
+				EBF474F9158D233500E6CB08 /* SAArtPiece.m in Sources */,
+				EBF47510158DB62500E6CB08 /* SALoginViewController.m in Sources */,
+				EBF47513158DB64200E6CB08 /* SASignupViewController.m in Sources */,
+				EBF47516158DBF0400E6CB08 /* UIImage+Resize.m in Sources */,
+				EBF4751C158DBF7500E6CB08 /* UIImage+Alpha.m in Sources */,
+				EBF4751D158DBF7500E6CB08 /* UIImage+RoundedCorner.m in Sources */,
+				EB5C2132158E8DF700946754 /* SAMapAnnotationView.m in Sources */,
+				EB5C2139158E928300946754 /* SAMapAnnotationCalloutView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +519,7 @@
 		EBF474D0158D044A00E6CB08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../libraries/Parse\"",
@@ -414,7 +527,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StreetArt/StreetArt-Prefix.pch";
 				INFOPLIST_FILE = "StreetArt/StreetArt-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Art Mapper";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -429,7 +543,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StreetArt/StreetArt-Prefix.pch";
 				INFOPLIST_FILE = "StreetArt/StreetArt-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Art Mapper";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -487,6 +601,7 @@
 				EBF474D1158D044A00E6CB08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBF474D2158D044A00E6CB08 /* Build configuration list for PBXNativeTarget "StreetArtTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +610,7 @@
 				EBF474D4158D044A00E6CB08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
