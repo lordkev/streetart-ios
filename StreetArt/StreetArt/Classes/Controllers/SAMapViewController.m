@@ -29,6 +29,7 @@ typedef enum {
 @interface SAMapViewController ()
 
 @property (nonatomic, strong) MKMapView *mapView;
+@property (nonatomic, strong) UIProgressView *uploadProgressView;
 @property (nonatomic, strong) NSArray *nearbyArtArray;
 
 - (void)addButtonPressed;
@@ -40,6 +41,7 @@ typedef enum {
 @implementation SAMapViewController
 
 @synthesize mapView = _mapView;
+@synthesize uploadProgressView = _uploadProgressView;
 @synthesize nearbyArtArray = _nearbyArtArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -57,13 +59,18 @@ typedef enum {
     self.navigationController.navigationBar.tintColor = [UIColor colorWithWhite:(116.0f/255.0f) alpha:1.0f];
     self.title = NSLocalizedString(@"Art Mapper", @"");
     
-    self.mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
-    self.mapView.delegate = self;
-    [self.view addSubview:self.mapView];
-    
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                                                            target:self
                                                                                            action:@selector(addButtonPressed)];
+    
+    self.mapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
+    self.mapView.delegate = self;
+    [self.view addSubview:self.mapView];
+
+    self.uploadProgressView = [[UIProgressView alloc] initWithFrame:CGRectMake(5.0f, 5.0f, 310.0f, 50.0f)];
+    self.uploadProgressView.backgroundColor = [UIColor clearColor];
+    self.uploadProgressView.progressTintColor = [UIColor darkGrayColor];
+    self.uploadProgressView.trackTintColor = [UIColor clearColor];
     
     SALocationManager *manager = [SALocationManager sharedInstance];
     [manager addObserver:self
@@ -131,12 +138,15 @@ typedef enum {
 
 - (void)uploadImage:(UIImage *)image withLocation:(CLLocation *)location {
     
+    self.uploadProgressView.progress = 0.0f;
+    [self.view addSubview:self.uploadProgressView];
+    
     [SAArtPiece saveArtPieceWithImage:image location:location success:^{
-        
+        [self.uploadProgressView removeFromSuperview];
     } failure:^(NSError *error) {
         
     } progressBlock:^(NSInteger percentDone) {
-        
+        self.uploadProgressView.progress = percentDone;
     }];
 }
 
