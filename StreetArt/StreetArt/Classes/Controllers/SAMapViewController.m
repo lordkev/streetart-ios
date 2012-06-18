@@ -34,7 +34,7 @@ typedef enum {
 
 - (void)addButtonPressed;
 - (void)updateMapWithLocation:(CLLocationCoordinate2D)location;
-- (void)reloadMapAnnotations;
+- (void)refreshMapAnnotations;
 - (void)uploadImage:(UIImage *)image withLocation:(CLLocation *)location;
 @end
 
@@ -83,6 +83,7 @@ typedef enum {
         SALoginViewController *loginViewController = [[SALoginViewController alloc] init];
         loginViewController.delegate = self;
         loginViewController.signUpController = [[SASignupViewController alloc] init];
+        loginViewController.signUpController.delegate = self;
         loginViewController.fields = PFLogInFieldsUsernameAndPassword 
                                     | PFLogInFieldsLogInButton
                                     | PFLogInFieldsSignUpButton 
@@ -125,15 +126,22 @@ typedef enum {
     [self.mapView setRegion:regionThatFits animated:NO];
 }
 
-- (void)reloadMapAnnotations {
+- (void)refreshMapAnnotations {
     
-    [self.mapView removeAnnotations:self.mapView.annotations];
-    
-    for (SAArtPiece *artPiece in self.nearbyArtArray) {
-        NSLog(@"adding annotation for artPiece: %@", artPiece);
-
-        [self.mapView addAnnotation:artPiece];
-    }
+    [SAArtPiece getArtPiecesInMapRect:[self.mapView visibleMapRect] success:^(NSArray *artPieces) {
+        
+        self.nearbyArtArray = artPieces;
+        
+        [self.mapView removeAnnotations:self.mapView.annotations];
+        
+        for (SAArtPiece *artPiece in self.nearbyArtArray) {
+            NSLog(@"adding annotation for artPiece: %@", artPiece);
+            
+            [self.mapView addAnnotation:artPiece];
+        }
+    } failure:^(NSError *error) {
+        NSLog(@"error getting art objects: %@", error);
+    }];
 }
 
 - (void)uploadImage:(UIImage *)image withLocation:(CLLocation *)location {
@@ -142,7 +150,9 @@ typedef enum {
     [self.view addSubview:self.uploadProgressView];
     
     [SAArtPiece saveArtPieceWithImage:image location:location success:^{
+        
         [self.uploadProgressView removeFromSuperview];
+        [self refreshMapAnnotations];
     } failure:^(NSError *error) {
         
     } progressBlock:^(NSInteger percentDone) {
@@ -202,13 +212,7 @@ typedef enum {
 
 - (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated {
     
-    [SAArtPiece getArtPiecesInMapRect:[self.mapView visibleMapRect] success:^(NSArray *artPieces) {
-        
-        self.nearbyArtArray = artPieces;
-        [self reloadMapAnnotations];
-    } failure:^(NSError *error) {
-        NSLog(@"error getting art objects: %@", error);
-    }];
+    [self refreshMapAnnotations];
 }
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {

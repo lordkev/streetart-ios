@@ -25,7 +25,7 @@
                   clientKey:@"mhlNetHwjqcu6Wc0moNBCyN4CTrHPAEQaR0U4vi4"];
     [PFFacebookUtils initializeWithApplicationId:@"453481201342319"];
     
-    [PFUser enableAutomaticUser];
+    //[PFUser enableAutomaticUser];
     PFACL *defaultACL = [PFACL ACL];
     // Optionally enable public read access by default.
     [defaultACL setPublicReadAccess:YES];
